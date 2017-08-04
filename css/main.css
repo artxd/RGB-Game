@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Play:700');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #1A1A1A;
+  color: #FDFFFC;
+  font-family: 'Play', sans-serif;
+  font-variant: small-caps;
+}
+header {
+  min-height: 15vh;
+}
+section {
+  min-height: 75vh;
+}
+footer {
+  min-height: 10vh;
+}
+#colors, #stats {
+  width: 65%;
+}
+#stats:nth-child(2) {
+  flex-grow: 1;
+}
+.color {
+  height: 0;
+  padding-bottom: calc(25% - 1em);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.color:hover {
+  transform: translateY(-0.20em);
+}
+.shake {
+  animation: shake 0.6s ease both;
+}
+@keyframes shake {
+  0%, 100%, 80%, 60%, 40%, 20% { transform: translateX(0em) }
+  10%, 90% { transform: translateX(-0.1em) }
+  30%, 70% { transform: translateX(0.3em) }
+  50% { transform: translateX(-0.4em) }
+}
+
+@media only screen and (max-width: 425px) {
+  #colors, #stats {
+    width: 95%;
+  }
+  .color {
+    height: 0;
+    padding-bottom: calc(50% - 0.5em);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #colors, #stats {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #colors, #stats {
+    width: 85%;
+  }
+}

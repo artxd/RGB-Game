@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="author" content="Agu-Art Annuk">
+		<title>Know Your RGB - a color quessing game</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+	</head>
+	<body>
+		<header class="grid gutters align-center justify-center">
+			<div class="cell cell-full align-center justify-center">
+				<h1 id="color">RGB(?,?,?)</h1>
+			</div>
+		</header>
+		<section class="grid align-center justify-center">
+			<div id="colors" class="grid gutters">
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+				<div class="cell cell-1of4 color"></div>
+			</div>
+			<div id="stats" class="grid gutters">
+				<div class="cell cell-1of3 align-center justify-center">
+					<h2 id="plus">+ <span>0</span></h2>
+				</div>
+				<div class="cell cell-1of3 align-center justify-center">
+					<h2 id="accuracy">Accuracy : <span>0</span>%</h2>
+				</div>
+				<div class="cell cell-1of3 align-center justify-center">
+					<h2 id="minus">- <span>0</span></h2>
+				</div>
+			</div>
+		</section>
+		<footer class="grid gutters align-center justify-center">
+			<div class="cell cell-full align-center justify-space-between">
+				<h3>Know Your RGB - a color quessing game</h3>
+				<h3>Created By Art</h3>
+			</div>
+		</footer>
+		<script type="text/javascript" src="logic/script.js"></script>
+	</body>
+</html>
