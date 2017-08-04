@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Play:700');
-* {
-  margin: 0;
-  padding: 0;
-}
+
 body {
   max-width: 100vw;
   min-height: 100vh;
@@ -22,9 +19,6 @@ footer {
 }
 #colors, #stats {
   width: 65%;
-}
-#stats:nth-child(2) {
-  flex-grow: 1;
 }
 .color {
   height: 0;
